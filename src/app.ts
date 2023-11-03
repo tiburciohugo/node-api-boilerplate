@@ -19,8 +19,6 @@ app.get('/swagger.json', (_req, res) => res.send(swaggerSpec));
 
 console.log(`To see the docs add swagger after the /`);
 
-app.listen(process.env.SERVER_PORT, () => {
-  console.log(
-    `Server listening on http://localhost:${process.env.SERVER_PORT}`
-  );
+app.listen(process.env.PORT, () => {
+  console.log(`Server listening on http://localhost:${process.env.PORT}`);
 });

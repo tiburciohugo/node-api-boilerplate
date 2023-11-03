@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  api:
+    image: node:18-alpine
+    build: .
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - '8080:8080'
+    command: npx nodemon -L ./src/app.ts

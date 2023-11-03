@@ -4,7 +4,7 @@
   "description": "A starting point for REST API design",
   "main": "index.js",
   "scripts": {
-    "start:dev": "npx nodemon -L",
+    "start:dev": "npx nodemon -L ./src/app.ts",
     "build": "npm run lint && npx tsc",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --ignore-pattern **/migrations/*.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
